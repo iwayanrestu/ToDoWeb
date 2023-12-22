@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ToDoWeb</title>
+  </head>
+  <body>
+    <header id="nav-bar">
+      <h3 id="logo">ToDoWeb</h3>
+      <nav>
+        <a href="">Home</a>
+        <a href="">Instructions</a>
+        <a href="">About Us</a>
+      </nav>
+    </header>
+    <main>
+      <div class="greet">
+        <section class="tag-line">
+          <p id="title">Tackle Your Tasks with Ease:</p>
+          <p id="description">Your Simple and Effective ToDoWeb Hub</p>
+        </section>
+        <img src="/assets/tag.png" alt="" />
+      </div>
+      <p id="title-task">Create Your Task Here</p>
+      <section class="input-section">
+        <input
+          class="input-task"
+          id="task-title"
+          type="text"
+          placeholder="Add task title..."
+        />
+        <input
+          class="input-task"
+          type="text"
+          id="task-desc"
+          placeholder="Add task description..."
+        />
+      </section>
+      <div class="buttons">
+        <button id="button-add" onclick="addTask()">Add Task</button>
+      </div>
+      <ul id="task-list"></ul>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -10,6 +10,7 @@ body {
   border-radius: 5px;
   background-color: #333333;
 }
+
 #logo {
   padding: 0px 10px;
   color: #ffff;
@@ -19,7 +20,12 @@ nav a {
   text-decoration: none;
   padding: 10px;
   color: #ffff;
+  border-radius: 5px;
 }
+nav a:hover {
+  background-color: #5a5a5a;
+}
+
 .greet {
   display: flex;
   padding: 10px;
@@ -127,4 +133,12 @@ li {
   border-radius: 10px;
   background-color: rgb(209, 206, 206);
   margin-right: 35px;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  img {
+    max-width: 0; /* Gambar tetap tidak boleh melebihi lebar kontainer */
+    height: auto; /* Biarkan tinggi menyesuaikan agar gambar tetap proporsional */
+  }
 }

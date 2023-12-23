@@ -3,7 +3,7 @@ function addTask() {
   var taskDesc = document.getElementById("task-desc");
   var taskList = document.getElementById("task-list");
 
-  if (taskTitle != " ") {
+  if (taskTitle.value !== "") {
     var currentDate = new Date();
     var dateString = currentDate.toLocaleDateString();
 
@@ -18,6 +18,9 @@ function addTask() {
     taskList.appendChild(newTask);
 
     taskTitle.value = "";
+    taskDesc.value = "";
+  } else {
+    alert("Judul tidak boleh kosong");
     taskDesc.value = "";
   }
 }
